@@ -10,7 +10,6 @@ public class Main {
         history = new ArrayList<>();
     }
 
-    // Fungsi untuk menampilkan semua history yang diurutkan dari yang paling baru
     public void view() {
         if (history.isEmpty()) {
             System.out.println("History browser kosong.");
@@ -22,13 +21,11 @@ public class Main {
         }
     }
 
-    // Fungsi untuk menambahkan website baru ke dalam daftar history
     public void browse(String url) {
         history.add(url);
         System.out.println("Menambahkan ke history: " + url);
     }
 
-    // Fungsi untuk kembali ke website sebelumnya dan menghapus history terakhir
     public void back() {
         if (history.isEmpty()) {
             System.out.println("Tidak ada history untuk dihapus.");
